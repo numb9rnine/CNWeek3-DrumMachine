@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYAN'S MPC DRUM MACHINE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+
+
+<!--  MAIN CONTAINER FOR MPC -->
+<div class='main-container'>
+
+  <div class="flex-container">
+    <h1 class='title'>RYAN DRUM</h1>
+    <!--PAD BUTTONS    -->
+    <div class='box'>
+      <button id='clap'>  <div class="flex-item">Q
+        <audio id="audioClap" src="./sounds/clap.wav"></audio>
+      </div></button>
+      <button id='tom'>  <div class="flex-item">W
+        <audio id="audioTom" src="./sounds/tom.wav"></audio>
+      </div></button>
+      <button id='tink'>  <div class="flex-item" onClick="playB()">E
+        <audio id="audioTink" src="./sounds/tink.wav"></audio>
+      </div></button>
+      <button id='snare'>  <div class="flex-item" onClick="playC()">A
+        <audio id="audioSnare" src="./sounds/snare.wav"></audio>
+      </div></button>
+      <button id='hihat'>  <div class="flex-item" onClick="playD()">S
+        <audio id="audioHihat" src="./sounds/hihat.wav"></audio>
+      </div></button>
+      <button id='openhat'>  <div class="flex-item" onClick="playE()">D
+        <audio id="audioOpenhat" src="./sounds/openhat.wav"></audio>
+      </div></button>
+      <button id='kick'>  <div class="flex-item" onClick="playF()">Z
+        <audio id="audioKick" src="./sounds/kick.wav"></audio>
+      </div></button>
+      <button id='boom'>  <div class="flex-item" onClick="playG()">X
+        <audio id="audioBoom" src="./sounds/boom.wav"></audio>
+      </div></button>
+      <button id='ride'>  <div class="flex-item" onClick="playH()">C
+        <audio id="audioRide" src="./sounds/ride.wav"></audio>
+      </div></button>
+    </div>
+  </div>
+</div>
+<!--MAIN CONTAINER END -->
+<script src="app.js"></script>   
+</body>
+</html>
